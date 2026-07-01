@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-<title>VIRGO V38 | Stale Survivor Kill · BingX Depth Authority</title>
+<title>VIRGO V39 | Execution Visibility + Outcome Tracker</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
 <style>
 :root{--bg:#070807;--panel:#0f1512;--panel2:#121b16;--line:#223329;--text:#e9fff2;--muted:#8aa997;--green:#32f58a;--red:#ff5f6d;--amber:#f9cb5e;--blue:#6bb7ff;--violet:#c08cff;}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#14351f 0,#070807 38%,#030403 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;overflow-x:hidden}.wrap{width:100%;max-width:520px;margin:0 auto;padding:10px 10px 26px}.hero{border:1px solid #2e5b3e;background:linear-gradient(180deg,#122319,#0b110e);border-radius:18px;padding:14px;margin-bottom:10px;box-shadow:0 0 22px rgba(50,245,138,.12)}h1{font-size:20px;letter-spacing:.5px;margin:0 0 6px}.sub{font-size:12px;color:var(--muted);line-height:1.35}.price{display:flex;align-items:baseline;gap:8px;margin-top:10px}.px{font-size:30px;font-weight:800;color:var(--green);font-variant-numeric:tabular-nums}.pill{font-size:11px;border:1px solid #31533d;border-radius:999px;padding:4px 8px;color:#b7ffd0;background:#0b1a10}.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.card{border:1px solid var(--line);background:rgba(13,22,17,.9);border-radius:14px;padding:10px;min-height:64px}.card h2{font-size:11px;letter-spacing:.8px;color:#b7ffd0;margin:0 0 7px;text-transform:uppercase}.big{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}.small{font-size:11px;color:var(--muted);line-height:1.3}.bar{height:7px;background:#18241d;border-radius:999px;overflow:hidden;margin-top:6px}.fill{height:100%;width:0;background:linear-gradient(90deg,#274b35,var(--green));transition:.2s}.section{margin-top:10px}.sectionTitle{font-size:12px;font-weight:800;color:#d9ffe5;margin:12px 2px 7px;letter-spacing:.5px}.table{width:100%;border-collapse:collapse;font-size:11px}.table th,.table td{border-bottom:1px solid #1e2e25;padding:6px 4px;text-align:left;vertical-align:top}.table th{color:#90caa6;font-weight:700}.tag{display:inline-block;border-radius:999px;padding:3px 6px;border:1px solid #33483a;background:#0b130f;font-size:10px;color:#c8ffda}.tag.long{border-color:#2f8052;color:#75ffad}.tag.short{border-color:#a8434b;color:#ff99a3}.tag.exec{border-color:#32f58a;background:#0e2a19;color:#7dffb3}.tag.wait{border-color:#78612c;color:#ffd46a}.tag.dead{border-color:#672f37;color:#ff818d}.tag.warn{border-color:#78612c;background:#201807;color:#ffd46a}.tag.stale{border-color:#784a2c;background:#201007;color:#ffb36a}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.btn{appearance:none;border:1px solid #37513f;background:#101a14;color:#eafff0;border-radius:12px;padding:10px 11px;font-weight:800;font-size:12px}.btn.primary{border-color:#2aa866;background:#0d2b19;color:#9dffc2}.btn.warn{border-color:#78612c;color:#ffd46a}.log{height:170px;overflow:auto;border:1px solid #1d2a22;background:#080d0a;border-radius:12px;padding:8px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;color:#aeeec1;white-space:pre-wrap}.footer{font-size:10px;color:#6d8f7b;line-height:1.35;margin-top:12px}.ok{color:var(--green)}.bad{color:var(--red)}.amber{color:var(--amber)}.blue{color:var(--blue)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#14351f 0,#070807 38%,#030403 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;overflow-x:hidden}.wrap{width:100%;max-width:520px;margin:0 auto;padding:10px 10px 26px}.hero{border:1px solid #2e5b3e;background:linear-gradient(180deg,#122319,#0b110e);border-radius:18px;padding:14px;margin-bottom:10px;box-shadow:0 0 22px rgba(50,245,138,.12)}h1{font-size:20px;letter-spacing:.5px;margin:0 0 6px}.sub{font-size:12px;color:var(--muted);line-height:1.35}.price{display:flex;align-items:baseline;gap:8px;margin-top:10px}.px{font-size:30px;font-weight:800;color:var(--green);font-variant-numeric:tabular-nums}.pill{font-size:11px;border:1px solid #31533d;border-radius:999px;padding:4px 8px;color:#b7ffd0;background:#0b1a10}.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.card{border:1px solid var(--line);background:rgba(13,22,17,.9);border-radius:14px;padding:10px;min-height:64px}.card h2{font-size:11px;letter-spacing:.8px;color:#b7ffd0;margin:0 0 7px;text-transform:uppercase}.big{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}.small{font-size:11px;color:var(--muted);line-height:1.3}.bar{height:7px;background:#18241d;border-radius:999px;overflow:hidden;margin-top:6px}.fill{height:100%;width:0;background:linear-gradient(90deg,#274b35,var(--green));transition:.2s}.section{margin-top:10px}.sectionTitle{font-size:12px;font-weight:800;color:#d9ffe5;margin:12px 2px 7px;letter-spacing:.5px}.table{width:100%;border-collapse:collapse;font-size:11px}.table th,.table td{border-bottom:1px solid #1e2e25;padding:6px 4px;text-align:left;vertical-align:top}.table th{color:#90caa6;font-weight:700}.tag{display:inline-block;border-radius:999px;padding:3px 6px;border:1px solid #33483a;background:#0b130f;font-size:10px;color:#c8ffda}.tag.long{border-color:#2f8052;color:#75ffad}.tag.short{border-color:#a8434b;color:#ff99a3}.tag.exec{border-color:#32f58a;background:#0e2a19;color:#7dffb3}.tag.wait{border-color:#78612c;color:#ffd46a}.tag.dead{border-color:#672f37;color:#ff818d}.tag.warn{border-color:#78612c;background:#201807;color:#ffd46a}.tag.stale{border-color:#784a2c;background:#201007;color:#ffb36a}.tag.win{border-color:#32f58a;background:#0e2a19;color:#7dffb3}.tag.fail{border-color:#ff5f6d;background:#251014;color:#ff9aa3}.tag.late{border-color:#f9cb5e;background:#201807;color:#ffd46a}.tag.pending{border-color:#6bb7ff;background:#071625;color:#9ad2ff}.nowrap{white-space:nowrap}.mono{font-variant-numeric:tabular-nums;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.decision{font-weight:900;letter-spacing:.2px}.minirow{display:block;margin-top:2px}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.btn{appearance:none;border:1px solid #37513f;background:#101a14;color:#eafff0;border-radius:12px;padding:10px 11px;font-weight:800;font-size:12px}.btn.primary{border-color:#2aa866;background:#0d2b19;color:#9dffc2}.btn.warn{border-color:#78612c;color:#ffd46a}.log{height:170px;overflow:auto;border:1px solid #1d2a22;background:#080d0a;border-radius:12px;padding:8px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;color:#aeeec1;white-space:pre-wrap}.footer{font-size:10px;color:#6d8f7b;line-height:1.35;margin-top:12px}.ok{color:var(--green)}.bad{color:var(--red)}.amber{color:var(--amber)}.blue{color:var(--blue)}
 .exportBox{display:none;margin-top:10px;border:1px solid #31533d;background:#07100b;border-radius:14px;padding:10px}.exportBox.show{display:block}.exportBox textarea{width:100%;height:180px;background:#050806;color:#caffd9;border:1px solid #213529;border-radius:10px;padding:8px;font:10px/1.35 ui-monospace,SFMono-Regular,Menlo,monospace}.exportActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 </style>
 </head>
 <body><div class="wrap">
 <div class="hero">
-<h1>VIRGO V38 STALE SURVIVOR KILL HARNESS</h1>
-<div class="sub">Purpose: solve minimum-four frequency by treating broad signals as suspects, not triggers. This cockpit captures live evidence for top-20 suspects, removes duplicates/no-runway/late-run/bait states, separates PROVISIONAL from full EXECUTE, and now kills stale candidates: no scout may resurrect into EXECUTE after the freshness window expires.</div>
+<h1>VIRGO V39 EXECUTION VISIBILITY + OUTCOME TRACKER</h1>
+<div class="sub">Purpose: keep the proven V38 stale-survivor kill, then add visible prices and maturity tracking. V39 shows Scout Entry, Execute Price, Live Price, move from scout, move after EXECUTE, freshness, chase warning, and whether the survivor later hits +500, fails -500, or weakens.</div>
 <div class="price"><div class="px" id="price">—</div><span class="pill" id="feedState">CONNECTING</span></div>
 <div class="small" id="lastSeen">Waiting for live feed…</div>
 <div class="btns"><button class="btn primary" onclick="startAll()">Connect / Restart</button><button class="btn" id="exportBtn" onclick="exportEvidence(event)">Export Evidence</button><button class="btn warn" onclick="clearSession()">Clear Session</button></div>
@@ -25,12 +25,15 @@
  <div class="card"><h2>Top Suspects Alive</h2><div class="big" id="suspectCount">0</div><div class="bar"><div class="fill" id="suspectBar"></div></div><div class="small">Top-20 suspect pool is staged; not all suspects are executable.</div></div>
  <div class="card"><h2>VIRGO Depth Authority</h2><div class="big" id="bookScore">—</div><div class="small" id="bookDetail">Waiting for BingX depth20</div></div>
  <div class="card"><h2>Siphon Flow</h2><div class="big" id="flowScore">—</div><div class="small" id="flowDetail">Waiting for trades</div></div>
+ <div class="card"><h2>Outcome Pending</h2><div class="big" id="outcomePending">0</div><div class="small">EXECUTE survivors still waiting for +500 / -500 judgment.</div></div>
+ <div class="card"><h2>Best After Execute</h2><div class="big" id="bestAfterExecute">—</div><div class="small" id="bestAfterDetail">No EXECUTE yet.</div></div>
 </div>
-<div class="section"><div class="sectionTitle">Independent Survivor Board</div><table class="table"><thead><tr><th>#</th><th>Dir</th><th>Stage</th><th>Score</th><th>Why / Poison</th></tr></thead><tbody id="survivorBody"><tr><td colspan="5" class="small">No survivors yet.</td></tr></tbody></table></div>
+<div class="section"><div class="sectionTitle">Independent Survivor Board — Entry / Execute / Live</div><table class="table"><thead><tr><th>#</th><th>Dir</th><th>Prices</th><th>Move</th><th>Action</th></tr></thead><tbody id="survivorBody"><tr><td colspan="5" class="small">No survivors yet.</td></tr></tbody></table></div>
+<div class="section"><div class="sectionTitle">V39 Outcome Tracker</div><table class="table"><thead><tr><th>#</th><th>Dir</th><th>After EXECUTE</th><th>Outcome</th><th>Timing</th></tr></thead><tbody id="outcomeBody"><tr><td colspan="5" class="small">No EXECUTE outcomes yet.</td></tr></tbody></table></div>
 <div class="section"><div class="sectionTitle">Top-20 Suspect Board</div><table class="table"><thead><tr><th>#</th><th>Dir</th><th>Age</th><th>Stage</th><th>Evidence</th></tr></thead><tbody id="suspectBody"><tr><td colspan="5" class="small">No suspects yet.</td></tr></tbody></table></div>
 <div class="section"><div class="sectionTitle">Non-Survivor Taxonomy Counters</div><div class="grid"><div class="card"><h2>Duplicate Fragment</h2><div class="big" id="cDup">0</div></div><div class="card"><h2>No Runway</h2><div class="big" id="cRunway">0</div></div><div class="card"><h2>Late Exhaustion</h2><div class="big" id="cLate">0</div></div><div class="card"><h2>Depth / Flow Bait</h2><div class="big" id="cBait">0</div></div><div class="card"><h2>Stale Survivor Kill</h2><div class="big" id="cStale">0</div><div class="small">Age &gt; 79m cannot execute.</div></div></div></div>
 <div class="section"><div class="sectionTitle">Evidence Log</div><div class="log" id="log"></div></div>
-<div class="footer">VIRGO V38 is a live evidence harness, not a promoted backtest engine. It exists because V33 proved static ranking cannot honestly identify four independent survivors. V38 adds stale-survivor kill: full EXECUTE must happen while the candidate is fresh, not hours later.</div>
+<div class="footer">VIRGO V39 is a live evidence harness and maturity tracker, not a promoted backtest engine. V38 solved stale resurrection; V39 now shows the exact scout/execute/live prices and judges what happens after EXECUTE.</div>
 </div>
 
 <script>
@@ -49,13 +52,14 @@
 const SYMBOL_BINANCE='1000pepeusdt';
 const BINGX_DEPTH_CHANNEL='1000PEPE-USDT@depth20';
 const POINT=1e-7, TARGET_POINTS=500, IMPACT_POINTS=100, SECOND_PUNCH_POINTS=75;
+const OUTCOME_TARGET_POINTS=500, OUTCOME_FAIL_POINTS=500, LATE_EXECUTE_MIN=60, CHASE_WARN_SCOUT_MOVE=175;
 const CANDIDATE_EXPIRY_MIN=79, CANDIDATE_CAUTION_MIN=30;
 const MAX_CANDLES=5000;
 let price=null,lastTs=0,lastSource='—';
 let priceStream=[], candleMap=new Map(), candles=[];
 let wsA=null, wsB=null, bingxTries=0, binanceTries=0, lastLive=0, liveSource='—';
 let trades=[], candidates=[], survivors=[], evidence=[];
-let counters={duplicate:0,runway:0,late:0,bait:0,stale:0};
+let counters={duplicate:0,runway:0,late:0,bait:0,stale:0,targetHit:0,failedFirst:0,weakFollow:0};
 let survivalPrev=null;
 let depthState=null,lastDepthAt=0; // VIRGO depth authority from BingX depth20
 let bingxSocketGeneration=0, lastBingxConnectAttempt=0, lastWakeAt=0;
@@ -247,7 +251,7 @@ function addTrade(p,q,isSell,tt){
 function siphBucket(k){let b=SIPH.buckets.get(k);if(!b){b={v:0,n:0,tb:0};SIPH.buckets.set(k,b); for(const kk of SIPH.buckets.keys())if(k-kk>15*60000)SIPH.buckets.delete(kk)}return b}
 function connectSiphon(){
   let ws;try{ws=new WebSocket('wss://open-api-swap.bingx.com/swap-market');SIPH.ws=ws;ws.binaryType='arraybuffer'}catch(e){return}
-  ws.onopen=function(){SIPH.tries=0; try{ws.send(JSON.stringify({id:'virgo-v37-siphon-'+Date.now(),reqType:'sub',dataType:'1000PEPE-USDT@trade'}))}catch(e){}};
+  ws.onopen=function(){SIPH.tries=0; try{ws.send(JSON.stringify({id:'virgo-v39-siphon-'+Date.now(),reqType:'sub',dataType:'1000PEPE-USDT@trade'}))}catch(e){}};
   ws.onmessage=async function(ev){
     let txt=(typeof ev.data==='string')?ev.data:await gunzip(ev.data); if(txt===null)return;
     if(txt==='Ping'||(txt.includes&&txt.includes('Ping'))){try{ws.send(txt.replace('Ping','Pong'))}catch(e){}return}
@@ -258,7 +262,7 @@ function connectSiphon(){
   ws.onerror=function(){try{ws.close()}catch(e){}};
 }
 setInterval(()=>{const fresh=Date.now()-SIPH.lastTradeAt<20000; const b=SIPH.buckets.get(minuteKey(Date.now())); const extra=fresh?` · siphon ${b?b.n:0}tr`:''; if(lastLive&&Date.now()-lastLive<20000)setStatus((liveSource||'LIVE')+extra);},5000);
-function startAll(){setStatus('CONNECTING'); log('VIRGO V38 stale survivor kill start',{target:'min4 independent survivors',feed:'HADES price/trade stack + isolated BingX depth20 authority',rule:'PROVISIONAL requires impact+survival; EXECUTE requires second punch within 79m freshness window'}); sync(); try{if(SIPH.ws){SIPH.ws.onclose=null;SIPH.ws.close()}}catch(e){} SIPH.ws=null; SIPH.tries=0; connectSiphon()}
+function startAll(){setStatus('CONNECTING'); log('VIRGO V39 execution visibility + outcome tracker start',{target:'min4 independent survivors',feed:'HADES price/trade stack + isolated BingX depth20 authority',rule:'PROVISIONAL requires impact+survival; EXECUTE requires second punch within 79m; V39 stores executePrice and tracks +500/-500 outcome'}); sync(); try{if(SIPH.ws){SIPH.ws.onclose=null;SIPH.ws.close()}}catch(e){} SIPH.ws=null; SIPH.tries=0; connectSiphon()}
 function hadesWake(why){
   const now=Date.now(); if(now-lastWakeAt<3000)return; lastWakeAt=now;
   const age=Date.now()-(lastLive||0); setStatus('resyncing '+why+'…');
@@ -284,6 +288,44 @@ function survivalMetrics(){
 }
 function pathMetrics(){let arr=recentCandles(96);if(arr.length<20)return null;let first=arr[0].o,last=arr[arr.length-1].c;let hi=Math.max(...arr.map(x=>x.h));let lo=Math.min(...arr.map(x=>x.l));let ret=pts(last,first);let range=pts(hi,lo);let loc=(last-lo)/(hi-lo+1e-12);let eff=Math.abs(ret)/(range+1e-9);let absrets=[];for(let i=1;i<arr.length;i++)absrets.push(Math.abs(pts(arr[i].c,arr[i-1].c)));let mean=absrets.reduce((a,b)=>a+b,0)/(absrets.length||1);let entropy=Math.min(1,mean/(range/Math.max(1,arr.length)+1e-9));return{ret,range,loc,eff,entropy,hi,lo,last}}
 function makeScout(dir,reason,score){let id=`${Date.now()}_${dir}_${Math.random().toString(36).slice(2,6)}`;let c={id,dir,scoutTime:Date.now(),expiresAt:Date.now()+CANDIDATE_EXPIRY_MIN*60000,date:mytDate(),entry:price,stage:'SCOUT',score,reason,impact:false,second:false,siphon:false,survival:false,independent:false,poison:null,evidence:[]};candidates.push(c);log(`SCOUT ${dir}`,{id,price,reason,score})}
+
+function signedMoveFrom(dir,fromPx,toPx){return pts(toPx,fromPx)*(dir==='LONG'?1:-1)}
+function actionLabel(x){
+  const age=+(x.executeAgeMin||x.ageMin||0);
+  const scoutMove=+(x.executeMoveFromScoutPts!==undefined?x.executeMoveFromScoutPts:(x.moveFromScoutPts||x.movePts||0));
+  if(age>=70 || scoutMove>=CHASE_WARN_SCOUT_MOVE)return {text:'VALID BUT LATE · DO NOT CHASE',cls:'late'};
+  if(age>=LATE_EXECUTE_MIN || scoutMove>=125)return {text:'LATE CHASE WARNING',cls:'late'};
+  return {text:'FRESH EXECUTE',cls:'win'};
+}
+function outcomeStatusClass(st){return st==='TARGET_HIT'?'win':(st==='FAILED_FIRST'?'fail':(st==='WEAK_FOLLOW_THROUGH'?'late':'pending'))}
+function updateOutcome(x){
+  if(!x||!x.fullSurvivor||!price)return x;
+  if(!x.executeTime)x.executeTime=Date.now();
+  if(!x.executePrice){x.executePrice=price; x.executePriceInferred=true;}
+  x.livePrice=price;
+  x.moveFromScoutPts=signedMoveFrom(x.dir,x.entry,price);
+  x.moveFromExecutePts=signedMoveFrom(x.dir,x.executePrice,price);
+  if(x.maxFavorableAfterExecute==null)x.maxFavorableAfterExecute=Math.max(0,x.moveFromExecutePts);
+  if(x.maxAdverseAfterExecute==null)x.maxAdverseAfterExecute=Math.min(0,x.moveFromExecutePts);
+  if(x.moveFromExecutePts>x.maxFavorableAfterExecute){x.maxFavorableAfterExecute=x.moveFromExecutePts;x.maxFavorableAt=Date.now();}
+  if(x.moveFromExecutePts<x.maxAdverseAfterExecute){x.maxAdverseAfterExecute=x.moveFromExecutePts;x.maxAdverseAt=Date.now();}
+  x.minutesSinceExecute=(Date.now()-x.executeTime)/60000;
+  if(!x.outcomeStatus||x.outcomeStatus==='PENDING'){
+    if(x.maxFavorableAfterExecute>=OUTCOME_TARGET_POINTS){x.outcomeStatus='TARGET_HIT';x.outcomeAt=x.outcomeAt||Date.now(); if(!x.targetLogged){counters.targetHit=(counters.targetHit||0)+1;x.targetLogged=true;log(`TARGET HIT ${x.dir}`,{id:x.id,executePrice:x.executePrice,maxFavorableAfterExecute:+x.maxFavorableAfterExecute.toFixed(0),rule:'+500-after-execute'});}}
+    else if(x.maxAdverseAfterExecute<=-OUTCOME_FAIL_POINTS){x.outcomeStatus='FAILED_FIRST';x.outcomeAt=x.outcomeAt||Date.now(); if(!x.failLogged){counters.failedFirst=(counters.failedFirst||0)+1;x.failLogged=true;log(`FAILED FIRST ${x.dir}`,{id:x.id,executePrice:x.executePrice,maxAdverseAfterExecute:+x.maxAdverseAfterExecute.toFixed(0),rule:'-500-after-execute'});}}
+    else if(x.minutesSinceExecute>CANDIDATE_EXPIRY_MIN && x.maxFavorableAfterExecute<OUTCOME_TARGET_POINTS){x.outcomeStatus='WEAK_FOLLOW_THROUGH';x.outcomeAt=x.outcomeAt||Date.now(); if(!x.weakLogged){counters.weakFollow=(counters.weakFollow||0)+1;x.weakLogged=true;log(`WEAK FOLLOW-THROUGH ${x.dir}`,{id:x.id,executePrice:x.executePrice,maxFavorableAfterExecute:+x.maxFavorableAfterExecute.toFixed(0),minutesSinceExecute:+x.minutesSinceExecute.toFixed(1)});}}
+    else x.outcomeStatus='PENDING';
+  }
+  const a=actionLabel(x); x.actionLabel=a.text; x.actionClass=a.cls;
+  return x;
+}
+function updateAllOutcomes(){for(const x of survivors)updateOutcome(x)}
+function outcomeSummary(){
+  let pending=0,target=0,fail=0,weak=0,best=null;
+  for(const x of survivors){updateOutcome(x); if(x.outcomeStatus==='TARGET_HIT')target++; else if(x.outcomeStatus==='FAILED_FIRST')fail++; else if(x.outcomeStatus==='WEAK_FOLLOW_THROUGH')weak++; else pending++; if(!best || (x.maxFavorableAfterExecute||0)>(best.maxFavorableAfterExecute||0))best=x;}
+  return {pending,target,fail,weak,best};
+}
+
 function spawnScouts(){let m=pathMetrics();if(!m||!price)return;let f=flowMetrics(), s=survivalMetrics();let longScore=0, shortScore=0, reasons=[];
  if(m.range>350&&m.eff>.28){ if(m.loc>.62){longScore+=.25;reasons.push('upper-location')} if(m.loc<.38){shortScore+=.25;reasons.push('lower-location')} }
  if(m.ret>180){longScore+=.2; shortScore+=.08} if(m.ret<-180){shortScore+=.2; longScore+=.08}
@@ -337,28 +379,34 @@ function classifyCandidate(c){
  if(executeReady){
    c.stage='EXECUTE';
    if(!survivors.some(x=>x.id===c.id)){
-     survivors.push({...c,executeTime:Date.now(),executeAgeMin:ageMin,fullSurvivor:true,expiryRule:'executed-within-79m'});
-     log(`EXECUTE SURVIVOR ${c.dir}`,{id:c.id,entry:c.entry,score:c.execScore,evidence:c.evidence,rule:'second-punch-required-within-79m',ageMin:+ageMin.toFixed(2)});
+     const execPx=price;
+     const survivor={...c,executeTime:Date.now(),executeAgeMin:ageMin,executePrice:execPx,executeMoveFromScoutPts:move,livePrice:price,moveFromScoutPts:move,moveFromExecutePts:0,maxFavorableAfterExecute:0,maxAdverseAfterExecute:0,outcomeStatus:'PENDING',fullSurvivor:true,expiryRule:'executed-within-79m'};
+     updateOutcome(survivor);
+     survivors.push(survivor);
+     log(`EXECUTE SURVIVOR ${c.dir}`,{id:c.id,scoutEntry:c.entry,executePrice:execPx,score:c.execScore,evidence:c.evidence,rule:'second-punch-required-within-79m',ageMin:+ageMin.toFixed(2),moveFromScoutPts:+move.toFixed(0),action:survivor.actionLabel});
    }
  }
  if(c.poison&&c.stage!=='EXECUTE')c.stage='REJECT';
 }
-function evaluateLive(){spawnScouts();for(let c of candidates){if(c.stage!=='EXECUTE'&&c.stage!=='REJECT')classifyCandidate(c)}candidates=candidates.filter(c=>Date.now()-c.scoutTime<2*3600*1000 || c.stage==='EXECUTE').slice(-80)}
+function evaluateLive(){spawnScouts();for(let c of candidates){if(c.stage!=='EXECUTE'&&c.stage!=='REJECT')classifyCandidate(c)}updateAllOutcomes();candidates=candidates.filter(c=>Date.now()-c.scoutTime<2*3600*1000 || c.stage==='EXECUTE').slice(-80)}
 function render(){
  let s=survivalMetrics(), f=flowMetrics();const bs=E('bookScore'),bd=E('bookDetail'),fs=E('flowScore'),fd=E('flowDetail');
  let d=s?s.depth:null; if(bs)bs.textContent=d&&!d.stale?(d.imbalance*100).toFixed(1)+'%':(s?s.imb.toFixed(3):'—'); if(bd)bd.textContent=d&&!d.stale?`depth ${d.lean} • age ${d.ageSec}s • spread ${d.spreadPts.toFixed(1)}pt • micro ${d.microLeanPts.toFixed(1)}pt • pressure ${d.pressure.toFixed(0)}%`:(s?`fallback survival ${s.imb.toFixed(3)} • Δ ${s.dImb.toFixed(3)} • ${s.range.toFixed(0)}pt path`:'Waiting for BingX depth20'); if(fs)fs.textContent=f.flow.toFixed(3); if(fd)fd.textContent=`${f.n} trades/90s • buy ${(f.buyRatio*100).toFixed(0)}% • sell ${(f.sellRatio*100).toFixed(0)}%`;
  let today=mytDate(), surv=survivors.filter(x=>x.date===today);E('survivorCount').textContent=`${surv.length} / 4`;E('survivorBar').style.width=Math.min(100,surv.length/4*100)+'%';let alive=candidates.filter(c=>c.stage!=='REJECT').length;E('suspectCount').textContent=alive;E('suspectBar').style.width=Math.min(100,alive/20*100)+'%';
  E('cDup').textContent=counters.duplicate;E('cRunway').textContent=counters.runway;E('cLate').textContent=counters.late;E('cBait').textContent=counters.bait;if(E('cStale'))E('cStale').textContent=counters.stale||0;
- let sb=E('survivorBody');if(!surv.length)sb.innerHTML='<tr><td colspan="5" class="small">No FULL survivors yet. PROVISIONAL is watch-only until second punch.</td></tr>';else sb.innerHTML=surv.slice(-4).map((x,i)=>`<tr><td>${i+1}</td><td><span class="tag ${x.dir.toLowerCase()}">${x.dir}</span></td><td><span class="tag exec">EXECUTE</span></td><td>${x.execScore}</td><td>${x.evidence.join(', ')}</td></tr>`).join('');
- let sorted=candidates.slice().sort((a,b)=>(b.execScore||0)-(a.execScore||0)).slice(0,20);let tb=E('suspectBody');if(!sorted.length)tb.innerHTML='<tr><td colspan="5" class="small">No suspects yet.</td></tr>';else tb.innerHTML=sorted.map((c,i)=>{let cls=(c.poison==='stale-survivor'?'stale':(c.stage==='REJECT'?'dead':(c.stage==='EXECUTE'?'exec':(c.stage==='PROVISIONAL'?'warn':'wait'))));let action=c.stage==='PROVISIONAL'?'WATCH · WAIT SECOND PUNCH':(c.stage==='EXECUTE'?'FULL SURVIVOR':(c.poison==='stale-survivor'?'STALE · DO NOT TRADE':(c.stage==='REJECT'?'IGNORE':'WAIT')));let fresh=(c.stage==='EXECUTE')?'executed fresh':((c.freshWindowLeftMin!==undefined)?('fresh left '+c.freshWindowLeftMin.toFixed(1)+'m'):'fresh window 79m');return `<tr><td>${i+1}</td><td><span class="tag ${c.dir.toLowerCase()}">${c.dir}</span></td><td>${(c.ageMin||0).toFixed(1)}m<br><span class="small">${fresh}</span></td><td><span class="tag ${cls}">${c.stage}</span><br><span class="small">${action}</span></td><td>${c.evidence?c.evidence.join('+'):''}${c.poison?'<br><span class="bad">'+c.poison+'</span>':''}<br><span class="small">score ${c.execScore||0} • move ${(c.movePts||0).toFixed(0)}pt</span></td></tr>`}).join('')
+ const os=outcomeSummary(); if(E('outcomePending'))E('outcomePending').textContent=os.pending; if(E('bestAfterExecute'))E('bestAfterExecute').textContent=os.best?((os.best.maxFavorableAfterExecute||0).toFixed(0)+'pt'):'—'; if(E('bestAfterDetail'))E('bestAfterDetail').textContent=os.best?`${os.best.dir} • ${os.best.outcomeStatus||'PENDING'} • adverse ${(os.best.maxAdverseAfterExecute||0).toFixed(0)}pt`:'No EXECUTE yet.';
+ let sb=E('survivorBody');if(!surv.length)sb.innerHTML='<tr><td colspan="5" class="small">No FULL survivors yet. PROVISIONAL is watch-only until second punch.</td></tr>';else sb.innerHTML=surv.slice(-4).map((x,i)=>{updateOutcome(x); const a=actionLabel(x); return `<tr><td>${i+1}</td><td><span class="tag ${x.dir.toLowerCase()}">${x.dir}</span><br><span class="tag exec">EXECUTE</span></td><td class="mono">Scout ${fmtPx(x.entry)}<span class="minirow">Exec ${fmtPx(x.executePrice||x.livePrice||price||x.entry)}</span><span class="minirow">Live ${price?fmtPx(price):'—'}</span></td><td>${(x.moveFromScoutPts||x.movePts||0).toFixed(0)}pt from scout<br><span class="small">${(x.moveFromExecutePts||0).toFixed(0)}pt after EXECUTE</span></td><td><span class="tag ${a.cls}">${a.text}</span><br><span class="small">age ${(x.executeAgeMin||0).toFixed(1)}m • score ${x.execScore||0}</span></td></tr>`}).join('');
+ let ob=E('outcomeBody'); if(ob){ if(!surv.length)ob.innerHTML='<tr><td colspan="5" class="small">No EXECUTE outcomes yet.</td></tr>'; else ob.innerHTML=surv.slice(-8).map((x,i)=>{updateOutcome(x); const cls=outcomeStatusClass(x.outcomeStatus); return `<tr><td>${i+1}</td><td><span class="tag ${x.dir.toLowerCase()}">${x.dir}</span></td><td>${(x.moveFromExecutePts||0).toFixed(0)}pt now<br><span class="small">best ${(x.maxFavorableAfterExecute||0).toFixed(0)}pt • adverse ${(x.maxAdverseAfterExecute||0).toFixed(0)}pt</span></td><td><span class="tag ${cls}">${x.outcomeStatus||'PENDING'}</span><br><span class="small">target +500 / fail -500</span></td><td>${(x.minutesSinceExecute||0).toFixed(1)}m after EXECUTE<br><span class="small">exec px ${fmtPx(x.executePrice||x.entry)}</span></td></tr>`}).join('');}
+
+ let sorted=candidates.slice().sort((a,b)=>(b.execScore||0)-(a.execScore||0)).slice(0,20);let tb=E('suspectBody');if(!sorted.length)tb.innerHTML='<tr><td colspan="5" class="small">No suspects yet.</td></tr>';else tb.innerHTML=sorted.map((c,i)=>{let cls=(c.poison==='stale-survivor'?'stale':(c.stage==='REJECT'?'dead':(c.stage==='EXECUTE'?'exec':(c.stage==='PROVISIONAL'?'warn':'wait'))));let action=c.stage==='PROVISIONAL'?'WATCH · WAIT SECOND PUNCH':(c.stage==='EXECUTE'?'FULL SURVIVOR':(c.poison==='stale-survivor'?'STALE · DO NOT TRADE':(c.stage==='REJECT'?'IGNORE':'WAIT')));let fresh=(c.stage==='EXECUTE')?'executed fresh':((c.freshWindowLeftMin!==undefined)?('fresh left '+c.freshWindowLeftMin.toFixed(1)+'m'):'fresh window 79m');return `<tr><td>${i+1}</td><td><span class="tag ${c.dir.toLowerCase()}">${c.dir}</span><br><span class="small mono">${fmtPx(c.entry||0)}</span></td><td>${(c.ageMin||0).toFixed(1)}m<br><span class="small">${fresh}</span></td><td><span class="tag ${cls}">${c.stage}</span><br><span class="small">${action}</span></td><td>${c.evidence?c.evidence.join('+'):''}${c.poison?'<br><span class="bad">'+c.poison+'</span>':''}<br><span class="small">score ${c.execScore||0} • move ${(c.movePts||0).toFixed(0)}pt</span></td></tr>`}).join('')
 }
 function safeEvidenceClone(obj){
   try{return JSON.parse(JSON.stringify(obj))}catch(e){return String(obj)}
 }
-function evidenceFilename(){return `virgo_v38_stale_survivor_kill_evidence_${Date.now()}.json`}
+function evidenceFilename(){return `virgo_v39_execution_outcome_evidence_${Date.now()}.json`}
 function makeEvidencePayload(){
   return {
-    engine:'VIRGO_500_V38_BINGX_DEPTH_AUTHORITY_STALE_SURVIVOR_KILL',
+    engine:'VIRGO_500_V39_EXECUTION_VISIBILITY_OUTCOME_TRACKER',
     created:nowIso(),
     symbol:'1000PEPEUSDT',
     feed:'HADES vMaster price/trade stack + isolated OMEN BingX depth20 authority only',
@@ -372,18 +420,20 @@ function makeEvidencePayload(){
     survivorCountToday:survivors.filter(x=>x.date===mytDate()).length,
     provisionalCountToday:candidates.filter(x=>x.date===mytDate()&&x.stage==='PROVISIONAL').length,
     cycleDay:mytDate(),
-    survivorRule:'FULL EXECUTE requires impact + second punch + siphon + depth survival + independence + no poison + age <= 79m',
+    survivorRule:'FULL EXECUTE requires impact + second punch + siphon + depth survival + independence + no poison + age <= 79m; V39 stores scout entry + execute price + post-execute outcome',
     candidateExpiryMin:CANDIDATE_EXPIRY_MIN,
     staleWarningMin:CANDIDATE_CAUTION_MIN,
     depthSubscription:safeEvidenceClone(depthSubscription),
     survivors:safeEvidenceClone(survivors),
+    outcomeSummary:safeEvidenceClone(outcomeSummary()),
+    outcomeRules:{targetAfterExecutePts:OUTCOME_TARGET_POINTS,failAfterExecutePts:OUTCOME_FAIL_POINTS,lateExecuteMin:LATE_EXECUTE_MIN,chaseWarnScoutMovePts:CHASE_WARN_SCOUT_MOVE},
     candidates:safeEvidenceClone(candidates),
     evidence:safeEvidenceClone(evidence),
     counters:safeEvidenceClone(counters),
     guardian:safeEvidenceClone(SHEOL_STREAM_GUARDIAN),
     siphon:{lastTradeAt:SIPH.lastTradeAt,tradeAgeSec:SIPH.lastTradeAt?Math.floor((Date.now()-SIPH.lastTradeAt)/1000):null,ratioV:SIPH.ratioV,ratioN:SIPH.ratioN,buckets:SIPH.buckets?SIPH.buckets.size:0},
     candleCount:candles.length,
-    note:'Depth authority isolated from OMEN_BINGX_DEPTH_AUTHORITY; OMEN UI/behaviour/command logic excluded. V38 separates PROVISIONAL from FULL EXECUTE and kills stale survivor resurrection. Full promotion requires second-punch confirmation within 79 minutes. Minimum-four target is evaluated by MYT 08:00 trading cycle.'
+    note:'Depth authority isolated from OMEN_BINGX_DEPTH_AUTHORITY; OMEN UI/behaviour/command logic excluded. V39 preserves V38 stale survivor kill, adds visible scout/execute/live prices, and tracks post-EXECUTE +500/-500 outcome. Minimum-four target is evaluated by MYT 08:00 trading cycle.'
   }
 }
 function evidenceJson(){return JSON.stringify(makeEvidencePayload(),null,2)}
@@ -404,10 +454,10 @@ function downloadEvidenceJson(json,filename){
 async function shareEvidenceJson(json,filename){
   const file=new File([json],filename,{type:'application/json'});
   if(navigator.canShare&&navigator.canShare({files:[file]})){
-    await navigator.share({files:[file],title:'VIRGO V38 Evidence',text:'VIRGO V38 stale survivor kill evidence JSON'});
+    await navigator.share({files:[file],title:'VIRGO V39 Evidence',text:'VIRGO V39 execution/outcome evidence JSON'});
     return true;
   }
-  if(navigator.share){await navigator.share({title:'VIRGO V38 Evidence',text:json.slice(0,9000)});return true;}
+  if(navigator.share){await navigator.share({title:'VIRGO V39 Evidence',text:json.slice(0,9000)});return true;}
   return false;
 }
 async function copyEvidenceJson(json){
@@ -437,10 +487,10 @@ function wireEvidenceExportButtons(){
   if(cp)cp.onclick=async()=>{try{const json=E('exportText')&&E('exportText').value?E('exportText').value:evidenceJson();await copyEvidenceJson(json);setExportStatus('Evidence JSON copied.','ok')}catch(e){setExportStatus('Copy failed. Select the text manually.','bad')}};
   if(cl)cl.onclick=()=>{const box=E('exportBox');if(box)box.classList.remove('show')};
 }
-function clearSession(){candidates=[];survivors=[];evidence=[];counters={duplicate:0,runway:0,late:0,bait:0,stale:0};localStorage.removeItem('virgo_v38_stale_survivor_kill_evidence');log('session cleared');render()}
+function clearSession(){candidates=[];survivors=[];evidence=[];counters={duplicate:0,runway:0,late:0,bait:0,stale:0,targetHit:0,failedFirst:0,weakFollow:0};localStorage.removeItem('virgo_v39_execution_outcome_evidence');log('session cleared');render()}
 setInterval(()=>{if(lastTs&&Date.now()-lastTs>15000)setStatus('STALE / RECONNECT')},5000);
-setInterval(()=>{try{localStorage.setItem('virgo_v38_stale_survivor_kill_evidence',JSON.stringify({survivors,candidates,evidence,counters}))}catch(e){}},10000);
-try{let saved=JSON.parse(localStorage.getItem('virgo_v38_stale_survivor_kill_evidence')||'null');if(saved){survivors=saved.survivors||[];candidates=saved.candidates||[];evidence=saved.evidence||[];counters={duplicate:0,runway:0,late:0,bait:0,stale:0,...(saved.counters||{})};log('restored local evidence')}}catch(e){}
+setInterval(()=>{try{localStorage.setItem('virgo_v39_execution_outcome_evidence',JSON.stringify({survivors,candidates,evidence,counters}))}catch(e){}},10000);
+try{let saved=JSON.parse(localStorage.getItem('virgo_v39_execution_outcome_evidence')||'null');if(saved){survivors=saved.survivors||[];candidates=saved.candidates||[];evidence=saved.evidence||[];counters={duplicate:0,runway:0,late:0,bait:0,stale:0,...(saved.counters||{})};log('restored local evidence')}}catch(e){}
 wireEvidenceExportButtons();startAll();render();setInterval(render,1000);
 </script>
 </body></html>
